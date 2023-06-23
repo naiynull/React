@@ -1,22 +1,10 @@
-import {useState} from "react"
-import { List } from "./components/List"
 
-function App() {
-  const [projects, setProjects] = useState<string[]>([]);
-  function handleAddProject() {
-    setProjects([...projects, `Novo projeto ${ Date.now() }`]);
-  }
+
+export function App() {
   return (
-    <>
-      <header>Conteúdo da Home</header>
-      <main>
-        <ul>
-          {projects.map(item => <List key={item}>{item}</List>)}
-        </ul>
-        <button onClick={handleAddProject}> Adiciona </button>
-      </main>
-    </>
-  );
+    <h1>TypeScript S2</h1>
+  )
+    
 }
 
-export default App
+
